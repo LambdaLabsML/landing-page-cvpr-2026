@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { cvprDemos } from '../data/cvpr-demos'
 import { workshops } from '../data/workshops'
+
+const base = import.meta.env.BASE_URL
+const asset = (path) => `${base}${path.replace(/^\//, '')}`
 const FOOTER_COLS = [
   {
     heading: 'AI Factories',
@@ -75,7 +78,7 @@ function CVPRFooter() {
         {/* Logo */}
         <div className="mb-12">
           <a href="https://lambda.ai" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
-            <img src="/logos/lambda.svg" alt="Lambda" className="h-[28px] w-auto" />
+            <img src={asset('/logos/lambda.svg')} alt="Lambda" className="h-[28px] w-auto" />
           </a>
         </div>
 
@@ -161,7 +164,7 @@ function CVPRNav() {
 
         {/* Logo */}
         <a href="https://lambda.ai" target="_blank" rel="noopener noreferrer" className="shrink-0 hover:opacity-80 transition-opacity">
-          <img src="/logos/lambda.svg" alt="Lambda" className="h-[32px] w-auto" />
+          <img src={asset('/logos/lambda.svg')} alt="Lambda" className="h-[32px] w-auto" />
         </a>
 
         {/* Center links */}
@@ -237,7 +240,7 @@ function DemoCard({ demo, index }) {
       <div className="relative h-44 bg-[#0a0a0a] overflow-hidden shrink-0">
         {demo.screenshot ? (
           <img
-            src={demo.screenshot}
+            src={asset(demo.screenshot)}
             alt={demo.title}
             className={`absolute inset-0 w-full h-full transition-transform duration-500 group-hover:scale-105 ${demo.screenshotFit === 'contain' ? 'object-contain p-4' : 'object-cover'}`}
           />
