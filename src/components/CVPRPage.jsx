@@ -285,7 +285,7 @@ function DemoCard({ demo, index }) {
 function SectionHeader({ title, subtitle }) {
   return (
     <div className="mb-10">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-none">{title}</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-none" style={{ fontFamily: "'Suisse Intl', sans-serif", fontWeight: 600, color: '#E7E6D9' }}>{title}</h2>
       {subtitle && <p className="text-sm text-[#a0a09e] mt-3">{subtitle}</p>}
     </div>
   )
