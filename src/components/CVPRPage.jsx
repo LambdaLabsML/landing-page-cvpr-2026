@@ -269,7 +269,7 @@ function DemoCard({ demo, index }) {
             ))}
           </div>
         )}
-        <p className="text-sm font-semibold text-white leading-snug">{demo.title}</p>
+        <p className="text-sm leading-snug" style={{ fontFamily: "'Suisse Intl', sans-serif", fontWeight: 600, color: '#E7E6D9' }}>{demo.title}</p>
         {demo.description && (
           <p className="text-xs text-gray-500 leading-relaxed">{demo.description}</p>
         )}
