@@ -278,33 +278,6 @@ function DemoCard({ demo, index }) {
 
 
 
-// ─── Typewriter ──────────────────────────────────────────────────────────────
-
-function Typewriter({ text, speed = 100 }) {
-  const [displayed, setDisplayed] = useState('')
-  const done = displayed.length === text.length
-
-  useEffect(() => {
-    setDisplayed('')
-    let i = 0
-    const interval = setInterval(() => {
-      i++
-      setDisplayed(text.slice(0, i))
-      if (i === text.length) clearInterval(interval)
-    }, speed)
-    return () => clearInterval(interval)
-  }, [text, speed])
-
-  return (
-    <span>
-      {displayed}
-      <span
-        className="inline-block w-[3px] h-[0.85em] ml-1 align-middle animate-pulse"
-        style={{ backgroundColor: '#e7e6d9', visibility: done ? 'hidden' : 'visible' }}
-      />
-    </span>
-  )
-}
 
 // ─── Section header ───────────────────────────────────────────────────────────
 
@@ -331,7 +304,7 @@ export default function CVPRPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
             <p className="text-xs font-semibold text-gray-500 tracking-widest uppercase mb-6">Denver, CO · June 3–7, 2026</p>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.04em] leading-[0.95] mb-6" style={{ color: '#e7e6d9' }}>
-              <Typewriter text="Lambda" /><br /><span style={{ color: 'rgba(231,230,217,0.35)' }}>@ CVPR 2026</span>
+              Lambda<br /><span style={{ color: 'rgba(231,230,217,0.35)' }}>@ CVPR 2026</span>
             </h1>
             <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed">
               3D Vision · World Model · Embodied AI — Modeling and reasoning about the physical world
