@@ -95,6 +95,7 @@ function CVPRFooter() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-[#a0a09e] hover:text-white transition-colors duration-150"
+                      style={link.label === 'Superintelligence' ? { fontFamily: "'Suisse Intl Mono', monospace", color: '#B0AFA6' } : {}}
                     >
                       {link.label}
                     </a>
