@@ -234,7 +234,7 @@ function DemoCard({ demo, index }) {
       href={demo.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group rounded-xl border border-white/10 bg-[#111] overflow-hidden flex flex-col hover:border-white/25 transition-all duration-200"
+      className="group border border-white/10 bg-[#111] overflow-hidden flex flex-col hover:border-white/25 transition-all duration-200"
       style={{ minHeight: '260px' }}
       aria-label={`Open demo: ${demo.title}`}
     >
