@@ -86,7 +86,7 @@ function CVPRFooter() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
           {FOOTER_COLS.map((col) => (
             <div key={col.heading}>
-              <p className="text-sm font-semibold text-white mb-4">{col.heading}</p>
+              <p className="text-sm font-semibold text-white mb-4" style={{ fontFamily: "'Suisse Intl Mono', monospace" }}>{col.heading}</p>
               <ul className="flex flex-col gap-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>
