@@ -308,7 +308,7 @@ export default function CVPRPage() {
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.04em] leading-[0.95] mb-6" style={{ color: '#e7e6d9' }}>
               <span style={{ fontFamily: "'Suisse Intl', sans-serif", fontWeight: 600, color: '#E7E6D9' }}>Lambda</span> <span style={{ color: '#5E5D58' }}>@ CVPR 2026</span>
             </h1>
-            <p className="text-base md:text-lg max-w-xl leading-relaxed" style={{ fontFamily: "'Suisse Intl Mono', monospace", color: '#E7E6D9' }}>
+            <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "'Suisse Intl Mono', monospace", color: '#E7E6D9' }}>
               3D Vision · World Model · Embodied AI — Modeling and reasoning about the physical world
             </p>
           </div>
