@@ -11,7 +11,7 @@ export const cvprDemos = [
   },
   {
     id: 'cvpr-d2',
-    url: 'https://3d-belief.github.io/demo/',
+    url: 'https://3d-belief.github.io/',
     screenshot: '/demos/3d-belief.png',
     title: '3D-Belief: Embodied Belief Inference via Generative 3D World Modeling',
     description: 'A generative 3D world model that maintains and updates an agent\'s beliefs about partially observed environments as new observations arrive.',
