@@ -286,7 +286,7 @@ function SectionHeader({ title, subtitle }) {
   return (
     <div className="mb-10">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-none" style={{ fontFamily: "'Suisse Intl', sans-serif", fontWeight: 600, color: '#E7E6D9' }}>{title}</h2>
-      {subtitle && <p className="text-sm text-[#a0a09e] mt-3">{subtitle}</p>}
+      {subtitle && <p className="text-sm mt-3" style={{ fontFamily: "'Suisse Intl Mono', monospace", color: '#B0AFA6' }}>{subtitle}</p>}
     </div>
   )
 }
