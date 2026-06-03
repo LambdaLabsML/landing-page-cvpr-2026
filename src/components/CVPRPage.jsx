@@ -340,7 +340,7 @@ export default function CVPRPage() {
                     rel="noopener noreferrer"
                     className="group flex items-start gap-6 border-t border-white/10 py-6 hover:opacity-80 transition-opacity"
                   >
-                    <span className="text-3xl font-bold text-white/30 tabular-nums shrink-0 w-10">
+                    <span className="text-3xl font-bold tabular-nums shrink-0 w-10" style={{ fontFamily: "'Suisse Intl Mono', monospace", color: '#42413E' }}>
                       {String(i + 1).padStart(2, '0')}
                     </span>
                     <div className="flex flex-col gap-1 min-w-0 flex-1">
