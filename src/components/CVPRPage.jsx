@@ -304,7 +304,7 @@ export default function CVPRPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
             <p className="text-xs font-semibold text-gray-500 tracking-widest uppercase mb-6">Denver, CO · June 3–7, 2026</p>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.04em] leading-[0.95] mb-6" style={{ color: '#e7e6d9' }}>
-              Lambda<br /><span style={{ color: '#5E5D58' }}>@ CVPR 2026</span>
+              Lambda <span style={{ color: '#5E5D58' }}>@ CVPR 2026</span>
             </h1>
             <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed">
               3D Vision · World Model · Embodied AI — Modeling and reasoning about the physical world
