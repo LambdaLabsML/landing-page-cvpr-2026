@@ -173,7 +173,8 @@ function CVPRNav() {
             <li key={label}>
               <a
                 href={href}
-                className="px-4 py-2 text-sm text-[#a0a09e] hover:text-white transition-colors duration-150 whitespace-nowrap"
+                className="px-4 py-2 text-sm text-[#a0a09e] hover:text-white transition-colors duration-150 whitespace-nowrap uppercase"
+                style={{ fontFamily: "'Suisse Intl Mono', monospace" }}
               >
                 {label}
               </a>
@@ -201,7 +202,7 @@ function CVPRNav() {
         <ul className="px-6 py-3 flex flex-col gap-1">
           {NAV_LINKS.map(({ label, href }) => (
             <li key={label}>
-              <a href={href} className="block px-3 py-2 text-sm text-[#a0a09e] hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>
+              <a href={href} className="block px-3 py-2 text-sm text-[#a0a09e] hover:text-white transition-colors uppercase" style={{ fontFamily: "'Suisse Intl Mono', monospace" }} onClick={() => setMenuOpen(false)}>
                 {label}
               </a>
             </li>
